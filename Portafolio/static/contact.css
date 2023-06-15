@@ -1,0 +1,46 @@
+.form-container {
+  max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto;
+  padding: 30px; /* Ajusta el padding según tus necesidades */
+}
+
+.form-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Alinea los elementos al centro horizontalmente */
+}
+
+.contact-form {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra el formulario dentro del contenedor */
+}
+
+.contact-form .form-group label {
+  color: #ffffff;
+  text-align: left; /* Alinea el texto de las etiquetas a la izquierda */
+}
+
+.contact-form .input-group input,
+.contact-form .input-group textarea {
+  border-radius: 10px;
+  background-color: #191970;
+  color: #ffffff;
+  padding: 10px; /* Ajusta el padding según tus necesidades */
+  width: 100%; /* Hace que los campos adopten el ancho completo del contenedor */
+}
+
+.contact-form .btn {
+  border-radius: 10px;
+  background-color: #191970;
+  color: #ffffff;
+  margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+  width: 100%; /* Hace que el botón ocupe todo el ancho del contenedor */
+}
+
+.contact-form .btn:hover {
+  background-color: #000080;
+}

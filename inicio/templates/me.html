@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    {% load static %}
+
+    <header class="row bg-black text-light">
+        {% for info in infos %}
+            <div class="col-md-4">
+                <img src="{{info.image}}" alt="Federico Johannson" height="300" >
+            </div>
+
+            <div class="col-md-8 my-auto">
+            
+                <h1>I am <strong>{{info.title}}</strong></h1>
+                <h2>{{info.sub_title}}</h2>
+                <p>{{info.description}}</p>
+        {% endfor %}
+        </div> 
+    </header>
+
+    <header class="row">
+        {% if degrees %}
+            {% for degree in degrees %}
+                <h2>{{degree.title}}</h2>
+                <h3>{{degree.puesto}}</h3>
+                <div class="col-md-4"><h3>Desde: {{degree.date1}}</h3></div>
+                <div class="col-md-8"><h3>Hasta: {{degree.date}}</h3></div>
+                <p>{{degree.description}}</p>
+            {% endfor %}
+        {% endif %}
+
+        {% if experiences %}
+            {% for experience in experiences %}
+                <h2>{{experience.title}}</h2>
+                <h3>{{experience.puesto}}</h3>
+                <div class="col-md-4"><h3>Desde: {{experience.date1}}</h3></div>
+                <div class="col-md-8"><h3>Hasta: {{experience.date}}</h3></div>
+                <p>{{experience.description}}</p>
+            {% endfor %}
+        {% endif %}
+    </header>
+    
+{% endblock %}
