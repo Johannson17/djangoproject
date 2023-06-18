@@ -14,7 +14,6 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-import dj_database_url
 
 
 # Quick-start development settings - unsuitable for production
@@ -51,7 +50,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Mysite.urls'
@@ -79,13 +77,13 @@ WSGI_APPLICATION = 'Mysite.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Portafolio',
-        'USER': 'Federico',
-        'PASSWORD': 'Ribonucleico17',
-        'HOST': 'localhost',
-        'PORT': 1702
+    'default':{
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'Portafolio',
+    'USER': 'Federico',
+    'PASSWORD': 'Ribonucleico17',
+    'HOST': 'localhost',
+    'PORT': '1702',
     }
 }
 
@@ -134,5 +132,3 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
