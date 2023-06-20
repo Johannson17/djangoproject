@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'Mysite.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postgres@localhost/postgres',
+        default='postgres://rdoswmrb:S0KNZA5yloPeDPKGyA0Fa0Rzw5EBmTIk@silly.db.elephantsql.com/rdoswmrb',
         conn_max_age=600
     )
 }
