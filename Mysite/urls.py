@@ -19,12 +19,14 @@ from django.urls import path, include
 from Portafolio import views
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.generic import RedirectView
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='home/', permanent=True)),
     path('admin/', admin.site.urls),
-    path('portfolio/', include('Portafolio.urls'), name ='portfolio'),
-    path('home/',include('inicio.urls'), name= 'home'),
-    path('contact/',include('Contacto.urls'), name= 'contact'),
+    path('portfolio/', include('Portafolio.urls'), name='portfolio'),
+    path('home/', include('inicio.urls'), name='home'),
+    path('contact/', include('Contacto.urls'), name='contact'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
