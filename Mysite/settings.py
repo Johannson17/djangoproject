@@ -25,7 +25,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'RENDER' not in os.environ
-DEBUG = 'FALSE'
+
+DEBUG = False
+
+CSRF_COOKIE_SECURE = False
+
+CSRF_TRUSTED_ORIGINS= ['https://johannson-portfolio.fly.dev','http://*.127.0.0.1:8000/']
 
 ALLOWED_HOSTS = ['*']
 
