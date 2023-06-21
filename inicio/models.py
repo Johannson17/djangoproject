@@ -13,7 +13,8 @@ class info(models.Model):
     image = ImageField(upload_to=upload_to_static)
 
 class degree(models.Model):
-    title = CharField(max_length=100)
+    title = CharField(max_length=50)
+    sub_title = CharField(max_length=100)
     description = TextField()
     date1 = DateField()
     date = DateField(default=datetime.date.today)

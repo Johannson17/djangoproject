@@ -18,24 +18,38 @@
         {% endfor %}
     </header>
 
-    <header class="row">
+    <div style="height: 50px; margin-top: 100px;"></div>
+
+    <header class="row bg-black text-light">
         {% if degrees %}
+        <h1 style="text-align: center;">My education</h1>
+
+        <div style="height: 50px; margin-top: 50px;"></div>
+
             {% for degree in degrees %}
                 <h2>{{degree.title}}</h2>
-                <h3>{{degree.puesto}}</h3>
-                <div class="col-md-4"><h3>Desde: {{degree.date1}}</h3></div>
-                <div class="col-md-8"><h3>Hasta: {{degree.date}}</h3></div>
+                <h3>{{degree.sub_title}}</h3>
                 <p>{{degree.description}}</p>
+                <div class="col-md-4"><h5>From: {{degree.date1}}</h5></div>
+                <div class="col-md-8"><h5>To: {{degree.date}}</h5></div>
             {% endfor %}
         {% endif %}
+    </header>
 
+    <div style="height: 50px; margin-top: 100px;"></div>
+
+    <header class="row bg-black text-light">
         {% if experiences %}
+        <h1 style="text-align: center;">My experience</h1>
+
+        <div style="height: 50px; margin-top: 50px;"></div>
+
             {% for experience in experiences %}
                 <h2>{{experience.title}}</h2>
                 <h3>{{experience.puesto}}</h3>
-                <div class="col-md-4"><h3>Desde: {{experience.date1}}</h3></div>
-                <div class="col-md-8"><h3>Hasta: {{experience.date}}</h3></div>
                 <p>{{experience.description}}</p>
+                <div class="col-md-4"><h5>Desde: {{experience.date1}}</h5></div>
+                <div class="col-md-8"><h5>Hasta: {{experience.date}}</h5></div>
             {% endfor %}
         {% endif %}
     </header>
