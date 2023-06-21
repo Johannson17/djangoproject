@@ -27,6 +27,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 # DEBUG = 'RENDER' not in os.environ
 DEBUG = False
 
+CSRF_COOKIE_SECURE = False
+
+CSRF_TRUSTED_ORIGINS= ['https://johannson-portfolio.fly.dev','http://*.127.0.0.1:8000/']
+
 ALLOWED_HOSTS = ['*']
 
 #RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
