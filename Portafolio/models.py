@@ -3,7 +3,7 @@ from django.db.models.fields import CharField, URLField
 from django.db.models.fields.files import ImageField
 
 def upload_to_static(instance, filename):
-    return f'portfolio/{filename}'
+    return f'static/portfolio/{filename}'
 
 class project(models.Model):
     tittle = CharField(max_length=100)
