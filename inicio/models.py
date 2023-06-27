@@ -4,7 +4,7 @@ from django.db.models.fields.files import ImageField
 import datetime 
 
 def upload_to_static(instance, filename):
-    return f'static/inicio/{filename}'
+    return f'inicio/{filename}'
 
 class info(models.Model):
     title = CharField(max_length=50)
