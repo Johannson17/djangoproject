@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for johannson-portfolio on 2023-06-21T13:27:12-03:00
+# fly.toml app configuration file generated for johannson-systems on 2023-07-12T11:11:15-03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "johannson-portfolio"
+app = "johannson-systems"
 primary_region = "eze"
 console_command = "/code/manage.py shell"
 
