@@ -30,7 +30,7 @@ DEBUG = True
 
 CSRF_COOKIE_SECURE = False
 
-CSRF_TRUSTED_ORIGINS= ['https://johannson-portfolio.fly.dev','http://*.127.0.0.1:8000/']
+CSRF_TRUSTED_ORIGINS= ['https://johannson-systems.fly.dev','http://*.127.0.0.1:8000/']
 
 ALLOWED_HOSTS = ['*']
 
